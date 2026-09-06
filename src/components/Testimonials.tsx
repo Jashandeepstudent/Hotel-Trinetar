@@ -1,5 +1,7 @@
 "use client";
 
+import { Quote } from "lucide-react";
+import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
 const sample = [
   {
@@ -21,18 +23,14 @@ const sample = [
     source: "Google Reviews",
   },
   {
-    quote:
-      "Guests often mention clean and spacious rooms with neat linen and bathroom.  
+    quote: `Guests often mention clean and spacious rooms with neat linen and bathroom.  
 • Friendly and helpful staff, especially front-desk service is appreciated.  
 • Good options for food and decent quality meals.  
-• Value for money stay, especially with breakfast/dinner combo in some bookings.",
+• Value for money stay, especially with breakfast/dinner combo in some bookings.`,
     name: "Younas Mattoo",
     source: "Google Reviews",
   },
 ];
-
-import { Quote } from "lucide-react";
-import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
 export function Testimonials() {
   return (
@@ -59,7 +57,7 @@ export function Testimonials() {
               className="border border-ink/10 rounded-md p-6 sm:p-7 bg-sand/40"
             >
               <Quote className="w-5 h-5 text-brass" strokeWidth={1.5} />
-              <p className="mt-4 text-ink-soft italic leading-relaxed text-[0.95rem]">
+              <p className="mt-4 text-ink-soft italic leading-relaxed text-[0.95rem] whitespace-pre-line">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="mt-5 flex items-center justify-between text-sm border-t border-ink/10 pt-4">
