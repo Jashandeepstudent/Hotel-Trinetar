@@ -10,27 +10,30 @@
 const sample = [
   {
     quote:
-      "Paste a real, verified guest review here — copy it exactly as written on Google or Tripadvisor.",
-    name: "Guest name (from platform)",
+      "Excellent place to stay. Great location. Outstanding dining variety and taste of every single dish...Polite and friendly staff that set the standards for professionalism and customer care.",
+    name: "Sanjay Sharma",
     source: "Google Reviews",
   },
   {
     quote:
-      "This is placeholder text. Replace with an actual review about the banquet hall or wedding experience.",
-    name: "Guest name (from platform)",
-    source: "Tripadvisor",
-  },
-  {
-    quote:
-      "Placeholder — swap in a real review that mentions the restaurant, staff, or room quality.",
-    name: "Guest name (from platform)",
+      "Amazing services and extremely helpful and humble staff members. Jyoti Devi and her team members were so sweet and helpful, she even went an extra mile for helping us during my friend's wedding. Thanks a lot for making all the preparation a little easier. Food was also amazing.",
+    name: "Abhishek Sharma",
     source: "Google Reviews",
   },
   {
     quote:
-      "Placeholder — swap in a real review about the location or check-in experience.",
-    name: "Guest name (from platform)",
-    source: "MakeMyTrip",
+      "Outstanding service and hospitality of Hotel Trinetar Garden The staff  was extremely polite, attentive, and professional. Food was served on time, everything was well managed, and the overall dining experience was excellent. Highly recommended for family dinners and celebrations",
+    name: "Keshav Sharma",
+    source: "Google Reviews",
+  },
+  {
+    quote:
+      "Guests often mention clean and spacious rooms with neat linen and bathroom.  
+• Friendly and helpful staff, especially front-desk service is appreciated.  
+• Good options for food and decent quality meals.  
+• Value for money stay, especially with breakfast/dinner combo in some bookings.",
+    name: "Younas Mattoo",
+    source: "Google Reviews",
   },
 ];
 
