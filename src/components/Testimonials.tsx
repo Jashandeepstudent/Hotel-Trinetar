@@ -1,12 +1,6 @@
 "use client";
 
-/**
- * PLACEHOLDER CONTENT — these are illustrative sample reviews, not real guest
- * quotes. Do not publish this section as-is. Before launch, replace `sample`
- * below with reviews copied verbatim from your actual Google Business /
- * Tripadvisor listing, with the reviewer's real display name and a link back
- * to the original review where possible.
- */
+
 const sample = [
   {
     quote:
