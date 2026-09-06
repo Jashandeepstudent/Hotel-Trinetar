@@ -19,7 +19,7 @@ export function Hero() {
           className="absolute inset-0"
         >
           <Image
-            src="/images/hero-exterior-day.jpg"
+            src="/images/exterior-dusk.jpg"
             alt="Hotel Trinetar Gardens & Banquets, front entrance on NH44"
             fill
             priority
