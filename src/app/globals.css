@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  /* Deep Pine — forest, tranquility, the NH44 treeline */
+  --color-pine: #1f3d33;
+  --color-pine-light: #2d5747;
+  --color-pine-dark: #16291f;
+
+  /* Aged Brass — festivity without shouting "gold foil invite" */
+  --color-brass: #c9a85c;
+  --color-brass-light: #dcc084;
+  --color-brass-dark: #a68740;
+
+  /* Warm Sand — background, softer than white */
+  --color-sand: #f7f4ec;
+  --color-sand-dark: #efe9d8;
+
+  /* Ink Umber — near-black with warmth, for text */
+  --color-ink: #26261f;
+  --color-ink-soft: #57564a;
+
+  /* Clay — CTAs, the one warm pop color */
+  --color-clay: #b8654a;
+  --color-clay-light: #c97d63;
+  --color-clay-dark: #9a4f38;
+
+  --color-cream: #fffdf8;
+}
+
+@theme inline {
+  --color-pine: var(--color-pine);
+  --color-pine-light: var(--color-pine-light);
+  --color-pine-dark: var(--color-pine-dark);
+  --color-brass: var(--color-brass);
+  --color-brass-light: var(--color-brass-light);
+  --color-brass-dark: var(--color-brass-dark);
+  --color-sand: var(--color-sand);
+  --color-sand-dark: var(--color-sand-dark);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-clay: var(--color-clay);
+  --color-clay-light: var(--color-clay-light);
+  --color-clay-dark: var(--color-clay-dark);
+  --color-cream: var(--color-cream);
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+/* Visible keyboard focus, always */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-clay);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Thin, brass-toned scrollbar for webkit browsers — small detail, not a focal point */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-sand);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brass);
+  border-radius: 6px;
+}
+
+.container-prose {
+  max-width: 72ch;
+}
